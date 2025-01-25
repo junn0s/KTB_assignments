@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Mermaid to draw.io">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1"
+      connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100"
+      math="0" shadow="0">
+      <root>
+        <!-- Draw.io 기본 루트 노드 -->
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- ===================== 메인 시작 ===================== -->
+        <!-- 노드: A (프로그램 시작) -->
+        <mxCell id="A" value="프로그램 시작" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="140" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: B (플레이어 이름 & 직업 입력) -->
+        <mxCell id="B" value="플레이어 이름 &amp; 직업 입력" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="50" width="180" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- 엣지: A -> B -->
+        <mxCell id="Edge1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="A" target="B">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: C (stage = 1 (리스 항구)) -->
+        <mxCell id="C" value="stage = 1 (리스 항구)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="50" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- 엣지: B -> C -->
+        <mxCell id="Edge2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="B" target="C">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ===================== 레벨 체크 ===================== -->
+        <!-- 노드: D (플레이어 레벨 체크) -->
+        <mxCell id="D" value="플레이어 레벨 체크" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="50" width="160" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- 엣지: C -> D -->
+        <mxCell id="Edge3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="C" target="D">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: X (모든 스테이지 클리어 후 종료) -->
+        <mxCell id="X" value="모든 스테이지 클리어 후 종료" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="0" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: D -> X (레벨 > 30) -->
+        <mxCell id="Edge4" value="레벨 &gt; 30" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="D" target="X">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: S3 (stage = 3 (커닝시티)) -->
+        <mxCell id="S3" value="stage = 3 (커닝시티)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="80" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: D -> S3 (레벨 > 20) -->
+        <mxCell id="Edge5" value="레벨 &gt; 20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="D" target="S3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: S2 (stage = 2 (엘리니아)) -->
+        <mxCell id="S2" value="stage = 2 (엘리니아)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="160" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: D -> S2 (레벨 > 10) -->
+        <mxCell id="Edge6" value="레벨 &gt; 10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="D" target="S2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: M (메인 메뉴 표시) -->
+        <mxCell id="M" value="메인 메뉴 표시" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="240" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: D -> M (그 외) -->
+        <mxCell id="Edge7" value="그 외" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="D" target="M">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ===================== 메인 메뉴 선택 ===================== -->
+        <!-- 노드: MN (메뉴 선택) -->
+        <mxCell id="MN" value="메뉴 선택" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="320" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: M -> MN -->
+        <mxCell id="Edge8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="M" target="MN">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: ADV (go_adventure() 실행) -->
+        <mxCell id="ADV" value="go_adventure() 실행" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="320" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: MN -> ADV (1) 모험) -->
+        <mxCell id="Edge9" value="1) 모험" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="MN" target="ADV">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: ST (show_status() 실행) -->
+        <mxCell id="ST" value="show_status() 실행" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="400" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: MN -> ST (2) 정보 확인) -->
+        <mxCell id="Edge10" value="2) 정보 확인" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="MN" target="ST">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: ST -> D (메인 루프 복귀) -->
+        <mxCell id="Edge11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="ST" target="D">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: INV (show_inventory() 및 use_item()) -->
+        <mxCell id="INV" value="show_inventory() 및 use_item()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="480" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: MN -> INV (3) 인벤토리) -->
+        <mxCell id="Edge12" value="3) 인벤토리" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="MN" target="INV">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: INV -> D -->
+        <mxCell id="Edge13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="INV" target="D">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: GSH (go_shopping() 실행) -->
+        <mxCell id="GSH" value="go_shopping() 실행" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="560" width="170" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: MN -> GSH (4) 상점 방문) -->
+        <mxCell id="Edge14" value="4) 상점 방문" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="MN" target="GSH">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: MGM (start_minigame() 실행) -->
+        <mxCell id="MGM" value="start_minigame() 실행" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="640" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: MN -> MGM (5) 미니게임) -->
+        <mxCell id="Edge15" value="5) 미니게임" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="MN" target="MGM">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: X2 (게임 종료) -->
+        <mxCell id="X2" value="게임 종료" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="720" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: MN -> X2 (0) 종료) -->
+        <mxCell id="Edge16" value="0) 종료" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="MN" target="X2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 엣지: S2 -> D, S3 -> D (스테이지2,3 -> 레벨 체크 복귀) -->
+        <mxCell id="Edge17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="S2" target="D">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="Edge18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="S3" target="D">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ===================== Adventure: go_adventure() ===================== -->
+        <!-- 노드: CR (create_random_monster() 호출) -->
+        <mxCell id="CR" value="create_random_monster() 호출" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="350" y="200" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: BTL (battle() 호출) -->
+        <mxCell id="BTL" value="battle() 호출" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="600" y="200" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- 엣지: ADV -> CR -->
+        <mxCell id="Edge19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="ADV" target="CR">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: CR -> BTL -->
+        <mxCell id="Edge20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="CR" target="BTL">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: BR (전투 루프) -->
+        <mxCell id="BR" value="전투 루프" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="800" y="200" width="100" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: BTL -> BR -->
+        <mxCell id="Edge21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="BTL" target="BR">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: AttackMon (몬스터 HP 감소 처리) -->
+        <mxCell id="AttackMon" value="몬스터 HP 감소 처리" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="980" y="170" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: BR -> AttackMon (플레이어 공격) -->
+        <mxCell id="Edge22" value="플레이어 공격" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="BR" target="AttackMon">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: CheckMonHP (몬스터 HP <= 0 ?) -->
+        <mxCell id="CheckMonHP" value="몬스터 HP &lt;= 0 ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="170" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: AttackMon -> CheckMonHP -->
+        <mxCell id="Edge23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="AttackMon" target="CheckMonHP">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: Win (전리품 획득 및 level_up()) -->
+        <mxCell id="Win" value="전리품 획득 및 level_up()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="70" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: CheckMonHP -> Win (Yes) -->
+        <mxCell id="Edge24" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="CheckMonHP" target="Win">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 엣지: Win -> D -->
+        <mxCell id="Edge25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="Win" target="D">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: MonAttack (몬스터 공격 실행) -->
+        <mxCell id="MonAttack" value="몬스터 공격 실행" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="250" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: CheckMonHP -> MonAttack (No) -->
+        <mxCell id="Edge26" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="CheckMonHP" target="MonAttack">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: CheckPlayerHP (플레이어 HP <= 0 ?) -->
+        <mxCell id="CheckPlayerHP" value="플레이어 HP &lt;= 0 ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="250" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: MonAttack -> CheckPlayerHP -->
+        <mxCell id="Edge27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="MonAttack" target="CheckPlayerHP">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: X3 (게임 오버) -->
+        <mxCell id="X3" value="게임 오버" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="200" width="100" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: CheckPlayerHP -> X3 (Yes) -->
+        <mxCell id="Edge28" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="CheckPlayerHP" target="X3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 엣지: CheckPlayerHP -> BR (No) -->
+        <mxCell id="Edge29" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="CheckPlayerHP" target="BR">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: InvUse (show_inventory() 및 use_item()) -->
+        <mxCell id="InvUse" value="show_inventory() 및 use_item()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="980" y="320" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: BR -> InvUse (2) 인벤토리) -->
+        <mxCell id="Edge30" value="2) 인벤토리" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="BR" target="InvUse">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: InvUse -> BR -->
+        <mxCell id="Edge31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="InvUse" target="BR">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 엣지: BR -> D (3) 도망) -->
+        <mxCell id="Edge32" value="3) 도망" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="BR" target="D">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ===================== Shop: go_shopping() / shop() ===================== -->
+        <!-- 노드: SMsg ('상점으로 가는 중...' 출력) -->
+        <mxCell id="SMsg" value="'상점으로 가는 중...' 출력" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;" vertex="1" parent="1">
+          <mxGeometry x="400" y="400" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: GSH -> SMsg -->
+        <mxCell id="Edge33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="GSH" target="SMsg">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: SH (shop() 호출) -->
+        <mxCell id="SH" value="shop() 호출" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;" vertex="1" parent="1">
+          <mxGeometry x="650" y="400" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: SMsg -> SH -->
+        <mxCell id="Edge34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="SMsg" target="SH">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: SC (아이템 종류 선택) -->
+        <mxCell id="SC" value="아이템 종류 선택: 무기, 방어구, 포션" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;" vertex="1" parent="1">
+          <mxGeometry x="850" y="400" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: SH -> SC -->
+        <mxCell id="Edge35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="SH" target="SC">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: BuyMenu (아이템 구매 로직 실행) -->
+        <mxCell id="BuyMenu" value="아이템 구매 로직 실행" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="400" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: SC -> BuyMenu (1,2,3) -->
+        <mxCell id="Edge36" value="1,2,3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="SC" target="BuyMenu">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: BuyMenu -> SC -->
+        <mxCell id="Edge37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="BuyMenu" target="SC">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: EndShop (상점 종료) -->
+        <mxCell id="EndShop" value="상점 종료" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="850" y="500" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: SC -> EndShop (0) -->
+        <mxCell id="Edge38" value="0" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="SC" target="EndShop">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: ShowInv (player.show_inventory()) -->
+        <mxCell id="ShowInv" value="player.show_inventory()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;" vertex="1" parent="1">
+          <mxGeometry x="850" y="580" width="170" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: EndShop -> ShowInv -->
+        <mxCell id="Edge39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="EndShop" target="ShowInv">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: ShowInv -> D -->
+        <mxCell id="Edge40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="ShowInv" target="D">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ===================== Minigame: start_minigame() ===================== -->
+        <!-- 노드: MGChoice (가위바위보, 운빨게임, 종료) -->
+        <mxCell id="MGChoice" value="가위바위보, 운빨게임, 종료" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="400" y="600" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: MGM -> MGChoice -->
+        <mxCell id="Edge41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="MGM" target="MGChoice">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: RSP (rock_scissors_paper() 실행) -->
+        <mxCell id="RSP" value="rock_scissors_paper() 실행" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="650" y="560" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: MGChoice -> RSP (가위바위보) -->
+        <mxCell id="Edge42" value="가위바위보" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="MGChoice" target="RSP">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: RSP -> MGChoice -->
+        <mxCell id="Edge43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="RSP" target="MGChoice">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: Lucky (are_you_lucky() 실행) -->
+        <mxCell id="Lucky" value="are_you_lucky() 실행" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="650" y="640" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: MGChoice -> Lucky (운빨게임) -->
+        <mxCell id="Edge44" value="운빨게임" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="MGChoice" target="Lucky">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: Lucky -> MGChoice -->
+        <mxCell id="Edge45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="Lucky" target="MGChoice">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 노드: EndMini (미니게임 종료) -->
+        <mxCell id="EndMini" value="미니게임 종료" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="650" y="720" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: MGChoice -> EndMini (종료) -->
+        <mxCell id="Edge46" value="종료" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="MGChoice" target="EndMini">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- 엣지: EndMini -> D -->
+        <mxCell id="Edge47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="EndMini" target="D">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
