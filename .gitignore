@@ -1,0 +1,80 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env.bak/
+.venv.bak/
+.env
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.pid
+*.swp
+*.swo
+*.DS_Store
+
+# Unit test / Coverage reports
+.pytest_cache/
+.coverage
+htmlcov/
+.cache
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# MyPy and type-checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Visual Studio Code settings
+.vscode/
+*.code-workspace
+
+# PyCharm project settings (if collaborating with others using PyCharm)
+.idea/
+*.iml
+
+# Temporary files and backup
+*.bak
+*.~undo-tree
+*.orig
+
+# Debugger tools
+debug*.log
+debugpy*.log
+pydevd*.log
+
+# Coverage files
+.coverage.*
+.coverage
+
+# Node.js (if using Node tools)
+node_modules/
+
+# Test results
+test-results*.xml
+
+# Other common Python-related files
+*.sqlite3
+*.pkl
+*.csv~
