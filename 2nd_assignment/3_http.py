@@ -1,5 +1,6 @@
 import requests
 import json
+import pandas as pd
 
 url = "https://jsonplaceholder.typicode.com/todos"
 data = requests.get(url).json()
@@ -12,5 +13,5 @@ with open("/Users/junsu/Desktop/개인 프로젝트/3rd_assignment/file1.json", 
 
 print("각 항목의 title 값:")
 print("\n------------------------------------------\n")
-for item in file1:
-    print(item.get("title"))
+df = pd.DataFrame(file1)
+print(df['title'])
