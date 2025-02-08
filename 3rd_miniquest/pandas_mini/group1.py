@@ -7,4 +7,4 @@ data = {
 }
 
 df = pd.DataFrame(data)
-df.groupby('부서')['급여']
+print(df.groupby('부서')['급여'].sum())
