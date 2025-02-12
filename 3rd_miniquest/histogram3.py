@@ -1,0 +1,10 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = np.random.randn(1000)
+
+plt.hist(data, bins=30, cumulative=True, color='orange', edgecolor='black')
+plt.xlabel('value')
+plt.ylabel('frequency')
+plt.title('gaussian distribution graph')
+plt.show()
