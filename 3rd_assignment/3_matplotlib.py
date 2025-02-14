@@ -12,7 +12,7 @@ df_price["Date"] = pd.to_datetime(df_price["Date"])
 plt.figure(figsize=(10, 5))
 plt.plot(df_price["Date"], df_price["Price"], marker='o', linestyle='-')
 
-ax = plt.gca()  
+ax = plt.gca()
 ax.xaxis.set_major_locator(mdates.MonthLocator(bymonthday=1))
 ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
 
