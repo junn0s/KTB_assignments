@@ -78,3 +78,5 @@ test-results*.xml
 *.sqlite3
 *.pkl
 *.csv~
+
+models/
